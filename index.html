@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Guia de quem serve no Ministério da Comunicação da Igreja Onda: links, horários, coberturas, apps e fontes.">
+<style>[hidden]{display:none!important}img{max-width:100%}</style>
+<title>Guia de Quem Serve na Comunicação</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Space+Grotesk:wght@400;500;700&display=swap">
+<style>
+/* Layout: guia de bolso, uma coluna estreita como o celular de quem serve; azul dos slides do workshop, sempre escuro */
+:root{
+  --navy:#0b0f3a;      /* fundo profundo */
+  --deep:#11187e;      /* azul institucional */
+  --royal:#2537de;     /* azul vivo da marca */
+  --sky:#9cc7e4;       /* apoio claro (paleta secundária) */
+  --paper:#eeeee7;     /* off-white da marca */
+  --muted:#aab0d8;     /* texto secundário */
+  --line:rgba(238,238,231,.14);
+  --card:rgba(255,255,255,.055);
+  --display:"Anton","Arial Narrow",Impact,sans-serif;
+  --body:"Space Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --hand:"Permanent Marker","Comic Sans MS",cursive;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{background:var(--navy)}
+body{
+  margin:0;font-family:var(--body);font-size:16px;line-height:1.55;color:var(--paper);
+  background:
+    radial-gradient(120% 60% at 15% 0%, rgba(37,55,222,.55), transparent 60%),
+    radial-gradient(90% 50% at 100% 35%, rgba(31,43,200,.35), transparent 65%),
+    var(--navy);
+  background-attachment:fixed;
+}
+.wrap{max-width:720px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 64px;display:flex;flex-direction:column;gap:44px}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--sky);outline-offset:3px;border-radius:6px}
+
+/* topo */
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-size:12px;letter-spacing:.04em;color:var(--muted)}
+.wm{font-size:16px;letter-spacing:-.02em;color:var(--paper)}
+.wm b{font-weight:700}
+.hero{position:relative;display:flex;flex-direction:column;gap:14px;padding-top:8px}
+.panel[hidden]{display:none}
+.hero .rings{position:absolute;right:0;top:-30px;width:220px;height:220px;opacity:.5;pointer-events:none}
+h1{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:clamp(56px,16vw,104px);line-height:.88;margin:0;letter-spacing:-.005em;position:relative}
+h1 small{display:block;font-family:var(--body);font-size:15px;font-weight:500;letter-spacing:.08em;margin-top:10px;line-height:1.2}
+.lede{max-width:34em;color:var(--muted);margin:0;position:relative}
+.motto{font-family:var(--hand);font-size:22px;line-height:1.25;color:var(--sky);margin:6px 0 0;transform:rotate(-1.5deg);max-width:22em;position:relative}
+
+/* seções */
+section{display:flex;flex-direction:column;gap:16px;scroll-margin-top:72px}
+h2{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:clamp(34px,9vw,46px);line-height:.95;margin:0;text-wrap:balance}
+.kicker{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--sky);margin:0 0 -8px}
+.note{font-family:var(--hand);color:var(--sky);font-size:19px;line-height:1.3;transform:rotate(-1deg);margin:0}
+p{margin:0;max-width:38em}
+
+/* navegação rápida */
+.jump{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;margin-inline:calc(-1 * max(16px,env(safe-area-inset-left,0px)));padding:10px max(16px,env(safe-area-inset-left,0px));background:rgba(11,15,58,.88);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line);display:flex;gap:8px;overflow-x:auto;scrollbar-width:none}
+.jump::-webkit-scrollbar{display:none}
+.jump a{flex:none;text-decoration:none;font-size:13px;font-weight:500;padding:7px 12px;border-radius:999px;border:1px solid var(--line)}
+.jump a:hover{background:var(--card)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--navy)}
+
+/* links */
+.links{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:10px}
+.lk{display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:14px;background:var(--card);border:1px solid var(--line);text-decoration:none;transition:background .15s,border-color .15s}
+.lk:hover{background:rgba(37,55,222,.28);border-color:rgba(156,199,228,.4)}
+.lk .ic{flex:none;width:40px;height:40px;border-radius:10px;background:var(--royal);display:grid;place-items:center}
+.lk .ic svg{width:20px;height:20px;stroke:var(--paper);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.lk .tx{min-width:0;display:flex;flex-direction:column;gap:2px}
+.lk strong{font-weight:700;font-size:15px;line-height:1.25}
+.lk span{font-size:13px;color:var(--muted);line-height:1.35}
+.lk .go{margin-left:auto;flex:none;color:var(--muted);font-size:18px}
+.lk.primary{background:var(--royal);border-color:transparent}
+.lk.primary .ic{background:var(--paper)}
+.lk.primary .ic svg{stroke:var(--deep)}
+.lk.primary span,.lk.primary .go{color:rgba(238,238,231,.82)}
+
+/* preparação */
+.prep{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.prep div{padding:16px;border-radius:14px;border:1px solid var(--line);display:flex;flex-direction:column;gap:6px;min-width:0}
+.prep b{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:24px;line-height:1;letter-spacing:.01em}
+.prep span{font-size:14px;color:var(--muted)}
+@media (max-width:560px){.prep{grid-template-columns:1fr}}
+
+/* horários */
+.times{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.time{padding:16px;border-radius:14px;background:var(--card);border:1px solid var(--line);display:flex;flex-direction:column;gap:4px;min-width:0}
+.time .t{font-family:var(--display);font-size:40px;line-height:1;font-variant-numeric:tabular-nums}
+.time .n{font-weight:700;font-size:15px}
+.time .s{font-size:13px;color:var(--muted)}
+@media (max-width:420px){.times{grid-template-columns:1fr}}
+
+/* coberturas (abas) */
+.tabs{display:flex;gap:6px;flex-wrap:wrap}
+.tabs button{font:inherit;font-size:14px;font-weight:700;color:var(--paper);background:transparent;border:1px solid var(--line);border-radius:999px;padding:9px 14px;cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--paper);color:var(--deep);border-color:var(--paper)}
+.panel{border-radius:18px;border:1px solid var(--line);background:var(--card);padding:20px;display:flex;flex-direction:column;gap:18px}
+.panel h3{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:32px;line-height:1;margin:0}
+.panel .sub{font-size:14px;color:var(--muted);margin-top:4px}
+.meta{display:flex;flex-wrap:wrap;gap:8px}
+.pill{font-size:13px;font-weight:500;padding:5px 11px;border-radius:999px;background:rgba(37,55,222,.45)}
+.pill.light{background:transparent;border:1px solid var(--line)}
+.lbl{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--sky)}
+.check{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+.check label{display:flex;gap:12px;align-items:flex-start;padding:10px 4px;border-bottom:1px solid var(--line);cursor:pointer}
+.check input{appearance:none;-webkit-appearance:none;flex:none;width:22px;height:22px;margin:1px 0 0;border:2px solid var(--sky);border-radius:6px;display:grid;place-items:center;cursor:pointer}
+.check input:checked{background:var(--sky)}
+.check input:checked::after{content:"";width:6px;height:11px;border:solid var(--navy);border-width:0 2.5px 2.5px 0;transform:translateY(-1px) rotate(45deg)}
+.check input:checked + span{color:var(--muted);text-decoration:line-through;text-decoration-color:rgba(170,176,216,.6)}
+.check em{font-style:normal;color:var(--muted);font-size:14px;display:block}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips span{font-size:13px;padding:5px 10px;border-radius:8px;border:1px dashed rgba(156,199,228,.45)}
+.close{border-left:3px solid var(--sky);padding:4px 0 4px 14px}
+.close b{display:block}
+.reset{align-self:flex-start;font:inherit;font-size:13px;color:var(--muted);background:none;border:0;padding:0;text-decoration:underline;cursor:pointer}
+
+/* apps */
+.apps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:10px}
+.app{padding:14px 16px;border-radius:14px;border:1px solid var(--line);display:flex;flex-direction:column;gap:4px;min-width:0}
+.app b{font-size:15px}
+.app span{font-size:13px;color:var(--muted)}
+.app a{font-size:13px;font-weight:500;color:var(--sky);margin-top:4px}
+
+/* prompts */
+.prompts{display:flex;flex-direction:column;gap:12px}
+.prompt{border-radius:16px;border:1px solid var(--line);background:var(--card);padding:18px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.prompt .ph{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.prompt .ph b{font-size:16px;line-height:1.3}
+.prompt .ph small{display:block;font-size:13px;color:var(--muted);font-weight:400;margin-top:2px}
+.prompt .ph .copy{flex:none}
+.ptext{margin:0;padding:14px;border-radius:10px;background:rgba(11,15,58,.65);border:1px solid var(--line);font-size:14px;line-height:1.55;color:var(--paper);white-space:pre-wrap;word-break:break-word;user-select:all}
+.steps{display:flex;flex-wrap:wrap;gap:6px;font-size:13px;color:var(--muted)}
+.steps span{padding:4px 10px;border-radius:999px;border:1px solid var(--line)}
+
+/* fontes */
+.type{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.spec{padding:18px;border-radius:14px;background:var(--card);border:1px solid var(--line);display:flex;flex-direction:column;gap:8px;min-width:0}
+.spec .big{font-size:40px;line-height:1}
+.spec .a{font-family:var(--body);font-weight:700;letter-spacing:-.02em}
+.spec .b{font-family:var(--display);text-transform:uppercase}
+.spec span{font-size:13px;color:var(--muted)}
+@media (max-width:520px){.type{grid-template-columns:1fr}}
+.alert{padding:14px 16px;border-radius:14px;background:rgba(156,199,228,.12);border:1px solid rgba(156,199,228,.35);font-size:14px}
+
+/* dúvidas */
+details{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;padding:14px 0;font-weight:700;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-weight:400;color:var(--sky);font-size:20px;line-height:1}
+details[open] summary::after{content:"–"}
+details p{padding:0 0 16px;color:var(--muted);font-size:15px}
+
+/* grupo + contato */
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.box{padding:18px;border-radius:14px;border:1px solid var(--line);display:flex;flex-direction:column;gap:8px;min-width:0}
+.box b{font-size:16px}
+.box span{font-size:14px;color:var(--muted)}
+.num{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.num code{font-family:var(--body);font-size:16px;font-weight:700;user-select:all}
+.copy{font:inherit;font-size:12px;font-weight:700;color:var(--navy);background:var(--sky);border:0;border-radius:999px;padding:5px 11px;cursor:pointer}
+@media (max-width:560px){.duo{grid-template-columns:1fr}}
+
+footer{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:18px;font-size:13px;color:var(--muted)}
+
+@media (prefers-reduced-motion:no-preference){.hero .rings circle{animation:pulse 6s ease-in-out infinite}.hero .rings circle:nth-child(2){animation-delay:.4s}.hero .rings circle:nth-child(3){animation-delay:.8s}.hero .rings circle:nth-child(4){animation-delay:1.2s}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+</style>
+</head>
+<body>
+
+
+<div class="wrap">
+
+  <header class="hero">
+    <div class="bar"><span>Ministério da comunicação</span><span class="wm">igreja<b>onda</b></span></div>
+    <svg class="rings" viewBox="0 0 200 200" aria-hidden="true">
+      <circle cx="80" cy="100" r="30" fill="none" stroke="#9cc7e4" stroke-width="1.5"/>
+      <circle cx="90" cy="100" r="48" fill="none" stroke="#9cc7e4" stroke-width="1.5"/>
+      <circle cx="100" cy="100" r="66" fill="none" stroke="#9cc7e4" stroke-width="1.5"/>
+      <circle cx="110" cy="100" r="84" fill="none" stroke="#9cc7e4" stroke-width="1.5"/>
+    </svg>
+    <h1>Workshop<small>DA COMUNICAÇÃO · GUIA DE QUEM SERVE</small></h1>
+    <p class="lede">Tudo o que você precisa no dia de servir na mídia: links, horários, o que gravar em cada culto, apps e fontes. Salve este link e abra antes de cada culto.</p>
+    <p class="motto">"A comunicação não é sobre nós, é sobre Cristo sendo visto através de nós!"</p>
+  </header>
+
+  <nav class="jump" aria-label="Ir para">
+    <a href="#links">Links</a>
+    <a href="#preparo">Preparação</a>
+    <a href="#horarios">Horários</a>
+    <a href="#cobertura">Cobertura</a>
+    <a href="#apps">Apps</a>
+    <a href="#prompts">Prompts IA</a>
+    <a href="#fontes">Fontes</a>
+    <a href="#duvidas">Dúvidas</a>
+    <a href="#grupo">Grupo</a>
+  </nav>
+
+  <section id="links">
+    <p class="kicker">Acesso rápido</p>
+    <h2>Links do dia de servir</h2>
+    <div class="links">
+      <a class="lk primary" href="https://drive.google.com/drive/folders/1A3AJy9SkGYSKJNMsGxffcI5kM1qUq5Ad?usp=sharing" target="_blank" rel="noopener">
+        <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 16V4M7 9l5-5 5 5M5 20h14"/></svg></span>
+        <span class="tx"><strong>Subir suas captações</strong><span>Drive para vídeos editados ou brutos para edição</span></span><span class="go">↗</span>
+      </a>
+      <a class="lk" href="https://drive.google.com/drive/folders/1KsiTl05Tamhw0KOhuBqXTq-QOiy0OUAI" target="_blank" rel="noopener">
+        <span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/></svg></span>
+        <span class="tx"><strong>PNGs dos cultos</strong><span>Artes e elementos prontos para os stories</span></span><span class="go">↗</span>
+      </a>
+      <a class="lk" href="https://docs.google.com/document/d/1HfbC4zPJC8h5xlGlve-GKMYuaPLL68kb5nZppA1pWu8/edit" target="_blank" rel="noopener">
+        <span class="ic"><svg viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg></span>
+        <span class="tx"><strong>Roteiro de stories</strong><span>Story por story, com tempo e texto sugerido</span></span><span class="go">↗</span>
+      </a>
+      <a class="lk" href="https://drive.google.com/drive/folders/1G3gzMrh93y1kscmkgkX9nxrVOUBNL5Wi?usp=sharing" target="_blank" rel="noopener">
+        <span class="ic"><svg viewBox="0 0 24 24"><circle cx="9" cy="12" r="3"/><circle cx="11" cy="12" r="6"/><circle cx="13" cy="12" r="9"/></svg></span>
+        <span class="tx"><strong>Identidade visual</strong><span>Manual de marca, logo, cores e grafismos</span></span><span class="go">↗</span>
+      </a>
+      <a class="lk" href="https://drive.google.com/drive/folders/1mEEJctsdeD9Jd5J3TRpJqI_gOY5Guz5l" target="_blank" rel="noopener">
+        <span class="ic"><svg viewBox="0 0 24 24"><path d="M4 20l6-16h1l6 16M7 14h9"/></svg></span>
+        <span class="tx"><strong>Fontes oficiais</strong><span>Space Grotesk licenciada: baixe sempre daqui</span></span><span class="go">↗</span>
+      </a>
+      <a class="lk" href="https://www.flickr.com/photos/ondaduraoficial" target="_blank" rel="noopener">
+        <span class="ic"><svg viewBox="0 0 24 24"><circle cx="8" cy="12" r="3.5"/><circle cx="16" cy="12" r="3.5"/></svg></span>
+        <span class="tx"><strong>Flickr: fotos da igreja</strong><span>Banco de fotos para usar na cobertura</span></span><span class="go">↗</span>
+      </a>
+      <a class="lk" href="https://drive.google.com/file/d/1hiBghKCeSFRd5hnHWm4xv2vJSBxbKTtP/view?usp=drivesdk" target="_blank" rel="noopener">
+        <span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="M16 10l5-3v10l-5-3"/></svg></span>
+        <span class="tx"><strong>Gravação da mentoria</strong><span>Líderes de comunicação · 19/10/2026</span></span><span class="go">↗</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="preparo">
+    <p class="kicker">Antes de tudo</p>
+    <h2>Preparação para servir</h2>
+    <div class="prep">
+      <div><b>Oração</b><span>Ore antes de pegar o celular. A cobertura começa no seu tempo com Deus.</span></div>
+      <div><b>Coração</b><span>A gente serve para Cristo ser visto, não para aparecer.</span></div>
+      <div><b>Pré-culto</b><span>Chegue no horário do pré-culto do seu culto (veja abaixo).</span></div>
+    </div>
+    <p>Comunicar de forma <b>bíblica, acolhedora e extraordinária</b> é trazer a Palavra e o entendimento do que queremos comunicar da forma mais fácil possível.</p>
+    <p class="note">antes de sair de casa: celular carregado, espaço livre e fontes instaladas!</p>
+  </section>
+
+  <section id="horarios">
+    <p class="kicker">Onde e quando</p>
+    <h2>Horários de pré-culto</h2>
+    <div class="times">
+      <div class="time"><span class="t">14h30</span><span class="n">NEW</span><span class="s">Culto de adolescentes (13 a 17 anos)</span></div>
+      <div class="time"><span class="t">18h45</span><span class="n">UNVT</span><span class="s">Culto de jovens, às 19h30</span></div>
+      <div class="time"><span class="t">09h15</span><span class="n">Domingo 10h</span><span class="s">Culto da família</span></div>
+      <div class="time"><span class="t">18h15</span><span class="n">Domingo 19h</span><span class="s">Culto da família</span></div>
+    </div>
+  </section>
+
+  <section id="cobertura">
+    <p class="kicker">No culto</p>
+    <h2>O que gravar em cada culto</h2>
+    <p>Escolha o culto em que você está servindo. Marque o que já gravou: a lista fica salva neste celular.</p>
+    <div class="tabs" role="tablist" aria-label="Cultos">
+      <button role="tab" id="tab-new" aria-controls="p-new" aria-selected="true">NEW</button>
+      <button role="tab" id="tab-unvt" aria-controls="p-unvt" aria-selected="false">UNVT</button>
+      <button role="tab" id="tab-dom10" aria-controls="p-dom10" aria-selected="false">Domingo 10h</button>
+      <button role="tab" id="tab-dom19" aria-controls="p-dom19" aria-selected="false">Domingo 19h</button>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p-new" aria-labelledby="tab-new">
+      <div><h3>Cobertura NEW</h3><div class="sub">Culto de adolescentes · 13 a 17 anos</div></div>
+      <div class="meta"><span class="pill">Pré-culto 14h30</span></div>
+      <div class="lbl">Necessário</div>
+      <ul class="check">
+        <li><label><input type="checkbox" id="new-1"><span>Abertura com o cronograma do dia<em>GDs, eventos, NEW, Somma UNVT, casa de oração, vigílias, afters</em></span></label></li>
+        <li><label><input type="checkbox" id="new-2"><span>Momento antes do culto iniciar</span></label></li>
+        <li><label><input type="checkbox" id="new-3"><span>Louvor</span></label></li>
+        <li><label><input type="checkbox" id="new-4"><span>Palavra<em>Base bíblica do dia + foto e vídeo de um trecho marcante</em></span></label></li>
+        <li><label><input type="checkbox" id="new-5"><span>Fechamento chamando para o UNVT às 19h30</span></label></li>
+      </ul>
+      <div class="lbl">Se der tempo</div>
+      <div class="chips"><span>Bazar Onda</span><span>GDs acontecendo</span><span>Comunhão entre os adolescentes</span><span>Entrevistas</span><span>Trends divertidas</span></div>
+      <button class="reset" type="button" data-reset="new">Limpar marcações</button>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p-unvt" aria-labelledby="tab-unvt" hidden>
+      <div><h3>Cobertura UNVT</h3><div class="sub">Culto de jovens · 19h30</div></div>
+      <div class="meta"><span class="pill">Pré-culto 18h45</span></div>
+      <div class="lbl">Necessário</div>
+      <ul class="check">
+        <li><label><input type="checkbox" id="unvt-1"><span>Momento antes do culto iniciar</span></label></li>
+        <li><label><input type="checkbox" id="unvt-2"><span>Louvor</span></label></li>
+        <li><label><input type="checkbox" id="unvt-3"><span>Palavra<em>Base bíblica do dia + foto e vídeo de um trecho marcante</em></span></label></li>
+        <li><label><input type="checkbox" id="unvt-4"><span>Pós-culto<em>Truco, comunhão, café</em></span></label></li>
+        <li><label><input type="checkbox" id="unvt-5"><span>Fechamento chamando para os cultos de domingo, 10h e 19h</span></label></li>
+      </ul>
+      <div class="lbl">Se der tempo</div>
+      <div class="chips"><span>Café</span><span>Afters</span><span>Recados</span><span>Onda Store</span><span>Estacionamento</span><span>Comunhão entre os jovens</span><span>Entrevistas</span><span>Trends divertidas</span></div>
+      <button class="reset" type="button" data-reset="unvt">Limpar marcações</button>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p-dom10" aria-labelledby="tab-dom10" hidden>
+      <div><h3>Cobertura domingo</h3><div class="sub">Culto da família · 10h</div></div>
+      <div class="meta"><span class="pill">Pré-culto 09h15</span></div>
+      <div class="lbl">Necessário</div>
+      <ul class="check">
+        <li><label><input type="checkbox" id="dom10-1"><span>Momento antes do culto iniciar</span></label></li>
+        <li><label><input type="checkbox" id="dom10-2"><span>Louvor</span></label></li>
+        <li><label><input type="checkbox" id="dom10-3"><span>Palavra<em>Base bíblica do dia + foto e vídeo de um trecho marcante</em></span></label></li>
+        <li><label><input type="checkbox" id="dom10-4"><span>Fechamento chamando para o culto de domingo às 19h</span></label></li>
+      </ul>
+      <div class="lbl">Se der tempo</div>
+      <div class="chips"><span>Café</span><span>Bazar</span><span>Shift</span><span>Kinder</span><span>Recados</span><span>Famílias</span><span>Onda Store</span><span>Estacionamento</span><span>Voluntários servindo</span><span>Entrevistas</span><span>Trends divertidas</span></div>
+      <button class="reset" type="button" data-reset="dom10">Limpar marcações</button>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p-dom19" aria-labelledby="tab-dom19" hidden>
+      <div><h3>Cobertura domingo</h3><div class="sub">Culto da família · 19h</div></div>
+      <div class="meta"><span class="pill">Pré-culto 18h15</span></div>
+      <div class="lbl">Necessário</div>
+      <ul class="check">
+        <li><label><input type="checkbox" id="dom19-1"><span>Momento antes do culto iniciar</span></label></li>
+        <li><label><input type="checkbox" id="dom19-2"><span>Louvor</span></label></li>
+        <li><label><input type="checkbox" id="dom19-3"><span>Palavra<em>Base bíblica do dia + foto e vídeo de um trecho marcante</em></span></label></li>
+        <li><label><input type="checkbox" id="dom19-4"><span>Fechamento chamando para os GDs durante a semana</span></label></li>
+      </ul>
+      <div class="lbl">Se der tempo</div>
+      <div class="chips"><span>Café</span><span>Bazar</span><span>Shift</span><span>Kinder</span><span>Recados</span><span>Famílias</span><span>Onda Store</span><span>Estacionamento</span><span>Voluntários servindo</span><span>Entrevistas</span><span>Trends divertidas</span></div>
+      <button class="reset" type="button" data-reset="dom19">Limpar marcações</button>
+    </div>
+
+    <p class="note">ideias de trends? tem um grupo no insta só com referências, peça para entrar!</p>
+  </section>
+
+  <section id="apps">
+    <p class="kicker">Ferramentas</p>
+    <h2>Apps de captação e edição</h2>
+    <div class="apps">
+      <div class="app"><b>Blackmagic Camera</b><span>Deixa a captação muito melhor.</span><a href="https://apps.apple.com/br/app/blackmagic-camera/id6449580241" target="_blank" rel="noopener">Baixar (iOS) ↗</a><a href="https://www.youtube.com/watch?v=6_raCHLsxac" target="_blank" rel="noopener">Tutorial: como usar ↗</a></div>
+      <div class="app"><b>CapCut</b><span>Edição rápida de vídeos e stories.</span><a href="https://www.capcut.com/" target="_blank" rel="noopener">capcut.com ↗</a></div>
+      <div class="app"><b>Canva</b><span>Artes e textos sobre os vídeos.</span><a href="https://www.canva.com/" target="_blank" rel="noopener">canva.com ↗</a></div>
+      <div class="app"><b>Adobe Podcast</b><span>Limpa e melhora o áudio da pregação.</span><a href="https://podcast.adobe.com/en/enhance" target="_blank" rel="noopener">Abrir aprimorador ↗</a></div>
+      <div class="app"><b>PicsArt</b><span>Ajustes e edição de fotos.</span><a href="https://picsart.com/" target="_blank" rel="noopener">picsart.com ↗</a></div>
+      <div class="app"><b>SCRL</b><span>Montagens e carrosséis para o Instagram.</span></div>
+      <div class="app"><b>GoDaddy Studio</b><span>Tem a Space Grotesk para usar nos vídeos pelo celular.</span><a href="https://apps.apple.com/br/app/godaddy-sites-marketing/id535811906" target="_blank" rel="noopener">iOS ↗</a><a href="https://play.google.com/store/apps/details?id=app.over.editor" target="_blank" rel="noopener">Android ↗</a></div>
+    </div>
+  </section>
+
+  <section id="prompts">
+    <p class="kicker">Ferramentas</p>
+    <h2>Prompts prontos para o ChatGPT</h2>
+    <p>Faltou a logo de algum ministério ou evento em PNG? Quer colocar no story a frase que apareceu no telão? Copie o prompt, abra o ChatGPT, anexe a foto e cole.</p>
+    <div class="steps"><span>1. Tire a foto ou print</span><span>2. Copie o prompt</span><span>3. Cole no ChatGPT com a foto</span><span>4. Baixe o PNG</span></div>
+    <div class="prompts">
+
+      <div class="prompt">
+        <div class="ph"><b>Logo em PNG branco<small>Foto ou print de um lugar onde a logo aparece</small></b><button class="copy" type="button" data-copy="pr-logo">Copiar</button></div>
+        <p class="ptext" id="pr-logo">Na imagem anexada aparece uma logo. Recrie essa logo de forma fiel, sem mudar o desenho, as letras, as proporções nem o espaçamento. Entregue como imagem PNG com fundo transparente, com a logo inteira na cor branca (#FFFFFF), em alta resolução (no mínimo 2000 px de largura), sem sombra, sem contorno, sem moldura e sem nenhum outro elemento da foto.</p>
+      </div>
+
+      <div class="prompt">
+        <div class="ph"><b>Logo em PNG azul da marca<small>Para usar sobre fundos claros</small></b><button class="copy" type="button" data-copy="pr-logo-azul">Copiar</button></div>
+        <p class="ptext" id="pr-logo-azul">Na imagem anexada aparece uma logo. Recrie essa logo de forma fiel, sem mudar o desenho, as letras, as proporções nem o espaçamento. Entregue como imagem PNG com fundo transparente, com a logo inteira na cor azul #2537DE, em alta resolução (no mínimo 2000 px de largura), sem sombra, sem contorno, sem moldura e sem nenhum outro elemento da foto.</p>
+      </div>
+
+      <div class="prompt">
+        <div class="ph"><b>Frase do telão em PNG<small>Foto do telão com a frase da pregação</small></b><button class="copy" type="button" data-copy="pr-telao">Copiar</button></div>
+        <p class="ptext" id="pr-telao">Na foto anexada aparece uma frase no telão da igreja. Primeiro, transcreva o texto exatamente como está, com acentos e pontuação. Depois, crie uma imagem PNG com fundo transparente contendo só essa frase, em letras brancas (#FFFFFF), com uma fonte sem serifa moderna e limpa (estilo Space Grotesk), centralizada e com boa leitura no celular. Formato vertical 1080 x 1920 px, para stories do Instagram. Sem fundo, sem moldura, sem efeitos e sem nenhum outro elemento.</p>
+      </div>
+
+      <div class="prompt">
+        <div class="ph"><b>Texto ou versículo digitado em PNG<small>Troque o trecho entre colchetes pelo seu texto</small></b><button class="copy" type="button" data-copy="pr-texto">Copiar</button></div>
+        <p class="ptext" id="pr-texto">Crie uma imagem PNG com fundo transparente contendo exatamente este texto, sem mudar nenhuma palavra: "[COLE AQUI O TEXTO OU VERSÍCULO E A REFERÊNCIA]". Letras brancas (#FFFFFF), fonte sem serifa moderna e limpa (estilo Space Grotesk), centralizada, com boa leitura no celular. Formato vertical 1080 x 1920 px, para stories do Instagram. Sem fundo, sem moldura, sem efeitos e sem nenhum outro elemento.</p>
+      </div>
+
+    </div>
+    <div class="alert"><b>Antes de postar:</b> confira se a logo saiu igual à original e se a frase não tem erro de digitação. A IA pode mudar detalhes. Se a logo já existe na pasta de PNGs dos cultos ou na identidade visual, use a oficial.</div>
+  </section>
+
+  <section id="fontes">
+    <p class="kicker">Identidade</p>
+    <h2>Fontes e cores</h2>
+    <div class="type">
+      <div class="spec"><span class="big a">Space Grotesk</span><span>Legendas, textos curtos e longos. É a fonte para legenda dos stories.</span></div>
+      <div class="spec"><span class="big b">Right Grotesk</span><span>Compact Black. Só para títulos, sempre em MAIÚSCULAS.</span></div>
+    </div>
+    <div class="alert"><b>Importante:</b> sempre baixe a fonte pela pasta de fontes oficiais. A Space Grotesk da igreja é a versão licenciada original. A versão gratuita de alguns aplicativos é diferente.</div>
+    <p>Use as cores da marca: azuis, off-white e preto. Os códigos e as regras de uso estão no Manual de Marca, na pasta de identidade visual.</p>
+    <div class="box"><b>Não tem a fonte?</b><span>Peça para o Joshua Estrada:</span><div class="num"><code id="tel">+55 47 99191-8871</code><button class="copy" type="button" data-copy="tel">Copiar</button></div></div>
+  </section>
+
+  <section id="duvidas">
+    <p class="kicker">Na hora de servir</p>
+    <h2>Dúvidas frequentes</h2>
+    <div>
+      <details><summary>Como realizar a captação?</summary><p>Use o Blackmagic Camera para uma imagem melhor (<a href="https://www.youtube.com/watch?v=6_raCHLsxac" target="_blank" rel="noopener">veja o tutorial</a>). Siga o roteiro de stories do culto e garanta primeiro tudo o que está em "Necessário". Depois, suba o material na pasta de captações.</p></details>
+      <details><summary>Como editar?</summary><p>CapCut ou Canva para montar, Adobe Podcast para limpar o áudio da pregação. Se não der para editar, suba o vídeo bruto na pasta de captações que a equipe edita.</p></details>
+      <details><summary>Qual fonte eu uso para legenda?</summary><p>Space Grotesk, a versão baixada da pasta de fontes oficiais. Títulos em Right Grotesk, sempre em maiúsculas.</p></details>
+      <details><summary>Quais aplicativos eu posso usar?</summary><p>Blackmagic Camera, CapCut, Canva, Adobe Podcast, SCRL e PicsArt. Veja a seção de apps acima.</p></details>
+    </div>
+  </section>
+
+  <section id="grupo">
+    <p class="kicker">Juntos</p>
+    <h2>Grupo da comunicação</h2>
+    <div class="duo">
+      <div class="box"><b>Igreja Onda | comunicação geral</b><span>O grupo existe para nos ajudarmos uns aos outros, combinar escalas e compartilhar testemunhos. Ainda não está nele? Peça para um líder do ministério te adicionar.</span></div>
+      <div class="box"><b>Exemplos de stories</b><span>Veja os stories que já foram postados no Instagram da igreja: estão todos guardados nos destaques do <a href="https://www.instagram.com/ondacuritiba/" target="_blank" rel="noopener">@ondacuritiba ↗</a>. Na dúvida sobre um post, mande no grupo antes de publicar.</span></div>
+    </div>
+  </section>
+
+  <footer><span>@ondacuritiba</span><span>Ministério da comunicação · Igreja Onda</span></footer>
+</div>
+
+<script>
+(function(){
+  var KEY='onda-guia-checks';
+  var state={};
+  try{state=JSON.parse(localStorage.getItem(KEY)||'{}')||{}}catch(e){state={}}
+  function save(){try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}}
+  document.querySelectorAll('.check input').forEach(function(cb){
+    if(state[cb.id])cb.checked=true;
+    cb.addEventListener('change',function(){state[cb.id]=cb.checked;save()});
+  });
+  document.querySelectorAll('[data-reset]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var p=b.getAttribute('data-reset');
+      document.querySelectorAll('.check input[id^="'+p+'-"]').forEach(function(cb){cb.checked=false;delete state[cb.id]});
+      save();
+    });
+  });
+  var tabs=[].slice.call(document.querySelectorAll('[role=tab]'));
+  function show(id){
+    tabs.forEach(function(t){
+      var on=t.id==='tab-'+id;
+      t.setAttribute('aria-selected',on?'true':'false');
+      t.tabIndex=on?0:-1;
+      document.getElementById(t.getAttribute('aria-controls')).hidden=!on;
+    });
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){show(t.id.slice(4))});
+    t.addEventListener('keydown',function(e){
+      var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;
+      if(d){var n=tabs[(i+d+tabs.length)%tabs.length];n.focus();show(n.id.slice(4))}
+    });
+  });
+  var h=(location.hash||'').slice(1);
+  if(['new','unvt','dom10','dom19'].indexOf(h)>-1){show(h);var c=document.getElementById('cobertura');if(c)c.scrollIntoView()}
+  document.querySelectorAll('[data-copy]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var el=document.getElementById(b.getAttribute('data-copy'));var txt=el.textContent.trim();
+      function sel(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r)}
+      try{navigator.clipboard.writeText(txt).then(function(){b.textContent='Copiado'},sel)}catch(e){sel()}
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
